@@ -17,11 +17,12 @@ A very small library for cross-platform tempfiles.
 (var tempfile-path "")
 (temp/with-file f
     (:write tfile "test data")
-    (set tempfile-path f/path)
-)
+    (set tempfile-path f/path))
 
 ```
 
-
 ## Installation
+
+First, have [janet installed](https://github.com/janet-lang/janet/releases)
+Then, `jpm install https://github.com/yumaikas/janet-tempfiles` should install tempfiles as `tempfiles`
 
