@@ -51,8 +51,8 @@
 
   ~(upscope 
      (def ,(symbol binding "/path") (,random-name 20))
-     (pp ,(symbol binding "/path"))
+     # (pp ,(symbol binding "/path"))
      (with [,binding (,file/open ,(symbol binding "/path") :w)]
-       (pp ,binding)
+       # (pp ,binding)
        ,;body)))
 
